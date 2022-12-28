@@ -60,7 +60,7 @@ pushd "$SCRIPTDIR/reviews"
   
   pushd reviews-wlpcfg
     # with ratings red stars
-    ${DOCKER_BUILD_ARGS} --pull -t "${PREFIX}/bookinfo-reviews-v3:${VERSION}" -t "${PREFIX}/examples-bookinfo-reviews-v3:latest" --build-arg service_version=v3 \
+    ${DOCKER_BUILD_ARGS} --pull -t "${PREFIX}:${VERSION}" -t "${PREFIX}/examples-bookinfo-reviews-v3:latest" --build-arg service_version=v3 \
 	   --build-arg enable_ratings=true --build-arg star_color=red .
   popd
 popd
