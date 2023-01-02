@@ -125,7 +125,7 @@ public class LibertyRestEndpoint extends Application {
     	// reviewer 2:
     	result += "{";
     	result += "  \"reviewer\": \"Reviewer2\",";
-    	result += "  \"text\": \"해당 부분의 메시지가 변경 됩니다.\"";
+    	result += "  \"text\": \"해당 부분의 메시지가 변경 됩니다. - 1\"";
       if (ratings_enabled) {
         if (starsReviewer2 != -1) {
           //result += ", \"rating\": {\"stars\": " + starsReviewer2 + ", \"color\": \"" + star_color + "\"}";
