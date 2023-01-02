@@ -56,7 +56,7 @@ fi
 
 pushd "$SCRIPTDIR/reviews"
   # java build the app.
-  podman run --rm -u root -v /home/gradle/buildfile:/home/gradle/.gradle/caches/modules-2/files-2.1 -v "$(pwd)":/home/gradle/project -w /home/gradle/project docker.io/gradle:4.8.1 gradle clean build
+  podman run --rm -u root -v /root/buildfile:/home/gradle/.gradle/caches/modules-2/files-2.1 -v "$(pwd)":/home/gradle/project -w /home/gradle/project docker.io/gradle:4.8.1 gradle clean build
   
   pushd reviews-wlpcfg
     # with ratings red stars
