@@ -110,7 +110,7 @@ public class LibertyRestEndpoint extends Application {
     	// reviewer 1:
     	result += "{";
     	result += "  \"reviewer\": \"Reviewer1\",";
-    	result += "  \"text\": \"티맥스 클라우드 짱짱맨!\"";
+    	result += "  \"text\": \"티맥스 클라우드 CI/CD 시연용 소스 코드 입니다.\"";
       if (ratings_enabled) {
         if (starsReviewer1 != -1) {
           //result += ", \"rating\": {\"stars\": " + starsReviewer1 + ", \"color\": \"" + star_color + "\"}";
@@ -125,11 +125,11 @@ public class LibertyRestEndpoint extends Application {
     	// reviewer 2:
     	result += "{";
     	result += "  \"reviewer\": \"Reviewer2\",";
-    	result += "  \"text\": \"집에 가고 싶어요!!\"";
+    	result += "  \"text\": \"해당 부분의 메시지가 변경 됩니다.\"";
       if (ratings_enabled) {
         if (starsReviewer2 != -1) {
           //result += ", \"rating\": {\"stars\": " + starsReviewer2 + ", \"color\": \"" + star_color + "\"}";
-          result += ", \"rating\": {\"stars\": " + starsReviewer2 + ", \"color\": \"" + "red" + "\"}";
+          result += ", \"rating\": {\"stars\": " + starsReviewer2 + ", \"color\": \"" + "black" + "\"}";
         }
         else {
           result += ", \"rating\": {\"error\": \"Ratings service is currently unavailable\"}";
